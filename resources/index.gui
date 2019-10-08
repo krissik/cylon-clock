@@ -9,6 +9,23 @@
     gradient-color3="#111111"
     gradient-color4="#011111" />
   </svg>
+  <svg id="dot">
+    <g transform="translate(10,0)">
+    <animateTransform attributeType="translate"
+      from="10,0" to="100%-45,20" begin="load" dur="2" />
+    <animateTransform attributeType="translate"
+      to="10,0" from="100%-45,20" begin="load+2.5" dur="2" />
+
+    <!--circle cx="0" cy="50%" r="10" /-->
+      <gradientRect x="0" y="0" width="20" height="20"
+        gradient-type="radial"
+        gradient-x1="50%" gradient-y1="50%"
+        gradient-x2="50%+150" gradient-y2="50%+150"
+        gradient-color1="red"
+        gradient-color2="#222222" />
+      </g>
+  </svg>
+
   <text id="hour" class="time">00</text>
   <text id="colon1" class="time">:</text>
   <text id="min" class="time">00</text>
@@ -16,4 +33,5 @@
   <text id="sec" class="time">00</text>
   <text id="hr" class="time">56</text>
   <rect class="divider"/>
+
 </svg>
