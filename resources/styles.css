@@ -1,0 +1,57 @@
+.defaultText {
+  font-size: 32;
+  font-family: System-Regular;
+  font-weight: regular;
+  text-length: 32;
+}
+
+#background {
+  x: 0;
+  y: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.time {
+  fill: white;
+  font-size: 40;
+  font-family: System-Regular;
+  text-anchor:middle;
+  text-length: 4;
+  y: 40%;
+}
+
+#hour {
+  x: 30%;
+}
+#colon1 {
+  x: 40%;  
+}
+#min {
+  x: 50%;
+}
+#colon2 {
+  x: 60%;  
+}
+#sec {
+  x: 70%;
+}
+
+#hr {
+  x: 50%;
+  y: 57%;
+  fill: white;
+  font-size: 16;
+  font-family: System-Regular;
+  text-anchor:middle;
+  text-length: 6;
+}
+
+.divider {
+  x:0;
+  y:60%;
+  fill: white;
+  height: 1;
+  width: 100%;
+}
+

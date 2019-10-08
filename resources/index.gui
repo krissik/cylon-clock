@@ -1,0 +1,19 @@
+<svg id="root">
+  <svg id="background">
+  <gradientRect x="0" y="0" width="100%" height="100%"
+    gradient-type="bilinear"
+    gradient-x1="95%" gradient-y1="95%"
+    gradient-x2="99%" gradient-y2="99%"
+    gradient-color1="#222222"
+    gradient-color2="#121212"
+    gradient-color3="#111111"
+    gradient-color4="#011111" />
+  </svg>
+  <text id="hour" class="time">00</text>
+  <text id="colon1" class="time">:</text>
+  <text id="min" class="time">00</text>
+  <text id="colon2" class="time">:</text>
+  <text id="sec" class="time">00</text>
+  <text id="hr" class="time">56</text>
+  <rect class="divider"/>
+</svg>
