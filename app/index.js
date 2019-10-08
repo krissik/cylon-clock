@@ -19,3 +19,33 @@ clock.ontick = function(evt) {
 }
 
 hr.drawHrm()
+
+import { display } from "display";
+let interval_id;
+let dot = document.getElementById("dot");
+
+function start_animation(){
+    interval_id = setInterval(function() {
+        console.log(`in interval ${interval_id}`)
+        if (display.on === true){
+            dot.animate("enable");
+            console.log('animation');
+        }
+    }, 3500);
+    dot.animate("enable");
+}
+
+function stop_animation(){
+    console.log(`stop interval ${interval_id}`)
+    clearInterval(interval_id)
+}
+
+display.onchange =function(this, evt){
+    if (display.on === true) {
+        start_animation();
+    } else {
+        stop_animation();
+    }
+}
+
+start_animation();
