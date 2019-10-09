@@ -31,6 +31,13 @@
   x: 65%;
 }
 
+#date {
+  y: 50%;
+  x: 50%;
+  font-size: 20;
+  text-length: 30;
+}
+
 #sec {
   fill: white;
   font-size: 250;
@@ -54,8 +61,8 @@
 
 .divider {
   x:0;
-  y:80%;
-  fill: white;
+  y:83%;
+  fill: #323232;
   height: 1;
   width: 100%;
 }

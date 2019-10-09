@@ -4,13 +4,13 @@
   <symbol id="cylon">
     <g transform="translate(10,0)">
       <animateTransform attributeType="translate"
-        from="10,0" to="50%,15%" begin="enable" dur="0.7" />
+        from="0,0" to="50%,10%" begin="enable" dur="0.7" />
       <animateTransform attributeType="translate"
-        from="50%,15%" to="100%-10,0" begin="enable+0.7" dur="0.7" />
+        from="50%,10%" to="100%-10,0" begin="enable+0.7" dur="0.7" />
       <animateTransform attributeType="translate"
-        from="100%-10,0" to="50%,15%" begin="enable+1.4" dur="0.7" />
+        from="100%-10,0" to="50%,10%" begin="enable+1.4" dur="0.7" />
       <animateTransform attributeType="translate"
-        from="50%,15%" to="10,0" begin="enable+2.1" dur="0.7" />
+        from="50%,10%" to="0,0" begin="enable+2.1" dur="0.7" />
 
       <!--circle cx="0" cy="50%" r="10" /-->
       <gradientRect x="0" y="0" width="20" height="20"
@@ -26,12 +26,12 @@
   <svg id="background">
   <gradientRect x="0" y="0" width="100%" height="100%"
     gradient-type="bilinear"
-    gradient-x1="95%" gradient-y1="95%"
-    gradient-x2="99%" gradient-y2="99%"
+    gradient-x1="40%" gradient-y1="70%"
+    gradient-x2="75%" gradient-y2="90%"
     gradient-color1="#222222"
-    gradient-color2="#121212"
-    gradient-color3="#111111"
-    gradient-color4="#011111" />
+    gradient-color2="#222222"
+    gradient-color3="#151515"
+    gradient-color4="#151515" />
   </svg>
   <svg id="dot">
     <use id="cylon-dot" href="#cylon" width="100%" height="100%" />
@@ -43,6 +43,8 @@
 
   <text id="sec">00</text>
   
+  <text id="date" class="time">Fr. 01.12.2019</text>
+
   <rect class="divider"/>
   <text id="hr" class="time">56</text>
 

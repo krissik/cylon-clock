@@ -10,13 +10,24 @@ clock.granularity = "seconds"
 let hour = document.getElementById("hour");
 let min = document.getElementById("min");
 let sec = document.getElementById("sec");
+let dateEle = document.getElementById("date");
+
+
+function pad0(str) {
+    return ("0" + str).slice(-2)
+}
 
 clock.ontick = function(evt) {
     //console.log(evt.date.toString());
 
-    hour.text =  ("0" + evt.date.getHours()).slice(-2);
-    min.text  =  ("0" + evt.date.getMinutes()).slice(-2);
-    sec.text  =  ("0" + evt.date.getSeconds()).slice(-2);
+    var currentDate = evt.date;
+    hour.text = pad0(currentDate.getHours());
+    min.text = pad0(currentDate.getMinutes());
+    sec.text = pad0(currentDate.getSeconds());
+    var dateString = pad0(currentDate.getUTCDate());
+    dateString += "." + pad0(currentDate.getMonth());
+    dateString += " " + currentDate.getUTCFullYear();
+    dateEle.text = dateString;
 }
 
 hr.drawHrm()
