@@ -31,7 +31,7 @@ function start_animation(){
             dot.animate("enable");
             console.log('animation');
         }
-    }, 3500);
+    }, 2800);
     dot.animate("enable");
 }
 
