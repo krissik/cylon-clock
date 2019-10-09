@@ -14,32 +14,37 @@
 
 .time {
   fill: white;
-  font-size: 40;
+  font-size: 60;
   font-family: System-Regular;
   text-anchor:middle;
-  text-length: 4;
+  text-length: 2;
   y: 40%;
 }
 
 #hour {
-  x: 30%;
+  x: 35%;
 }
 #colon1 {
-  x: 40%;  
+  x: 50%;  
 }
 #min {
-  x: 50%;
+  x: 65%;
 }
-#colon2 {
-  x: 60%;  
-}
+
 #sec {
-  x: 70%;
+  fill: white;
+  font-size: 250;
+  font-family: System-Regular;
+  text-anchor:middle;
+  text-length: 2;
+  x: 50%;
+  y: 65%;
+  opacity: 0.25;
 }
 
 #hr {
   x: 50%;
-  y: 57%;
+  y: 90%;
   fill: white;
   font-size: 16;
   font-family: System-Regular;
@@ -49,7 +54,7 @@
 
 .divider {
   x:0;
-  y:60%;
+  y:80%;
   fill: white;
   height: 1;
   width: 100%;

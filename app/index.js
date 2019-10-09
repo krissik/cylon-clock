@@ -1,6 +1,7 @@
 import document from "document";
 import clock from "clock";
 
+import * as simpleSettings from "./device-settings.js";
 import * as hr from "./hr.js"
 
 clock.granularity = "seconds"
@@ -49,3 +50,20 @@ display.onchange =function(this, evt){
 }
 
 start_animation();
+
+/* -------- SETTINGS -------- */
+function settingsCallback(data) {
+    if (!data) {
+      return;
+    }
+    var secsEle = document.getElementById('sec');
+    if (!data.showSecs) {
+        secsEle.style.display = 'none';
+        clock.granularity = "minutes";
+    } else {
+        secsEle.style.display = 'inline';
+        clock.granularity = "seconds";
+    }
+  }
+
+simpleSettings.initialize(settingsCallback);

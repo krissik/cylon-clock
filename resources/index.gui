@@ -40,9 +40,10 @@
   <text id="hour" class="time">00</text>
   <text id="colon1" class="time">:</text>
   <text id="min" class="time">00</text>
-  <text id="colon2" class="time">:</text>
-  <text id="sec" class="time">00</text>
-  <text id="hr" class="time">56</text>
+
+  <text id="sec">00</text>
+  
   <rect class="divider"/>
+  <text id="hr" class="time">56</text>
 
 </svg>

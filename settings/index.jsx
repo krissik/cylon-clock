@@ -10,7 +10,7 @@ function settingsComponent(props) {
       />
       <Toggle
          settingsKey="showSecs"
-         label="show Seconds (not yet implemented)"
+         label="show Seconds"
       />
     </Page>
   );
