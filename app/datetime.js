@@ -29,8 +29,6 @@ export function drawDateTime(currentDate) {
     hour.text = pad0(currentDate.getHours());
     min.text = pad0(currentDate.getMinutes());
     sec.text = pad0(currentDate.getSeconds());
-    console.log('###########');
-    console.log(getWeekday(currentDate));
     var dateString = getWeekday(currentDate) + ".";
     dateString += " " + pad0(currentDate.getUTCDate());
     dateString += "." + pad0(currentDate.getMonth());

@@ -11,8 +11,6 @@ clock.granularity = "seconds"
 
 
 clock.ontick = function(evt) {
-    //console.log(evt.date.toString());
-
     var currentDate = evt.date;
     datetime.drawDateTime(currentDate);
     battery.drawBat();  
@@ -28,17 +26,14 @@ let dot = document.getElementById("dot");
 
 function start_animation(){
     interval_id = setInterval(function() {
-        console.log(`in interval ${interval_id}`)
         if (display.on === true){
             dot.animate("enable");
-            console.log('animation');
         }
     }, 2800);
     dot.animate("enable");
 }
 
 function stop_animation(){
-    console.log(`stop interval ${interval_id}`)
     clearInterval(interval_id)
 }
 
