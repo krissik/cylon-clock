@@ -47,5 +47,13 @@
 
   <rect class="divider"/>
   <text id="hr" class="time">56</text>
+  
+  <svg id="bat">
+    <rect id="bat-line"/>
+    <rect id="bat-line-2"/>
+    <image id="bat-image" 
+           href="battery.png"/>
+    
+  </svg>
 
 </svg>

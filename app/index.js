@@ -3,6 +3,7 @@ import clock from "clock";
 
 import * as simpleSettings from "./device-settings.js";
 import * as hr from "./hr.js"
+import * as battery from "./battery"
 
 clock.granularity = "seconds"
 
@@ -28,6 +29,8 @@ clock.ontick = function(evt) {
     dateString += "." + pad0(currentDate.getMonth());
     dateString += " " + currentDate.getUTCFullYear();
     dateEle.text = dateString;
+
+    battery.drawBat();  
 }
 
 hr.drawHrm()
@@ -62,7 +65,6 @@ display.onchange =function(this, evt){
 
 start_animation();
 
-/* -------- SETTINGS -------- */
 function settingsCallback(data) {
     if (!data) {
       return;
@@ -78,3 +80,4 @@ function settingsCallback(data) {
   }
 
 simpleSettings.initialize(settingsCallback);
+
