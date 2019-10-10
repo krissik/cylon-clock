@@ -1,5 +1,3 @@
-console.log('111111111111111111 HR HR HR HR HR HR HR HR HR HR HR HR HR HR HR ')
-
 import { HeartRateSensor } from "heart-rate";
 import { display } from "display";
 import document from "document"; 
@@ -19,5 +17,3 @@ export function drawHrm() {
 drawHrm()
 hrm.onreading = drawHrm;
 hrm.start();
-
-console.log('HR HR HR HR HR HR HR HR HR HR HR HR HR HR HR ')
