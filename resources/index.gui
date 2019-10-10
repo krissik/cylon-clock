@@ -51,6 +51,13 @@
     <image id="hr-image" class="icon" href="hr.png"/>
     <text id="hr-text" class="time">56</text>
   </section>
+
+  <section id="steps" class="icon-section">
+    <image id="steps-image" class="icon" href="steps.png"/>
+    <text id="steps-text" class="time">8.756</text>
+  </section>
+
+
   
   <section id="bat" class="icon-section">
     <image id="bat-image-1" class="icon" href="battery.png"/>

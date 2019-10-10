@@ -49,6 +49,15 @@
   opacity: 0.25;
 }
 
+.divider {
+  x: 0;
+  y: 88%;
+  fill: #323232;
+  height: 1;
+  width: 100%;
+  display: none;
+}
+
 .icon-section {
   y: 95%;
 }
@@ -79,13 +88,23 @@
 
 }
 
-.divider {
+#steps {
+  x: 25%;
+}
+
+#steps #steps-image {
   x: 0;
-  y: 88%;
-  fill: #323232;
-  height: 1;
-  width: 100%;
-  display: none;
+  fill: gold;
+  opacity: 0.5;
+}
+
+#steps #steps-text {
+  x: 30;
+  y: 0;
+  font-size: 16;
+  font-family: System-Regular;
+  text-anchor: start;
+  text-length: 10;
 }
 
 #dot {
