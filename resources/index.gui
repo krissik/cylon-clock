@@ -48,12 +48,13 @@
   <rect class="divider"/>
   <text id="hr" class="time">56</text>
   
-  <svg id="bat">
-    <rect id="bat-line"/>
-    <rect id="bat-line-2"/>
-    <image id="bat-image" 
-           href="battery.png"/>
-    
-  </svg>
+  <section id="bat">
+  <g transform="translate(8,40)">
+    <g transform="rotate(-90)">
+      <image id="bat-image-1" href="battery.png"/>
+      <image id="bat-image-2" href="battery.png"/>
+    </g>
+  </g>
+  </section>
 
 </svg>
