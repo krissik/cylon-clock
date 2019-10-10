@@ -46,15 +46,15 @@
   <text id="date" class="time">Fr. 01.12.2019</text>
 
   <rect class="divider"/>
-  <text id="hr" class="time">56</text>
+
+  <section id="hr" class="icon-section">
+    <image id="hr-image" class="icon" href="hr.png"/>
+    <text id="hr-text" class="time">56</text>
+  </section>
   
-  <section id="bat">
-  <g transform="translate(8,40)">
-    <g transform="rotate(-90)">
-      <image id="bat-image-1" href="battery.png"/>
-      <image id="bat-image-2" href="battery.png"/>
-    </g>
-  </g>
+  <section id="bat" class="icon-section">
+    <image id="bat-image-1" class="icon" href="battery.png"/>
+    <image id="bat-image-2" class="icon" href="battery.png"/>
   </section>
 
 </svg>
